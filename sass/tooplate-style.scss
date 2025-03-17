@@ -293,11 +293,11 @@ b, strong {
    /* For mobile screens */
    @media (max-width: 480px) {
 	.resume h2 {
-	  font-size: 1.1rem;
+	  font-size: 0.9rem;
 	}
    
 	.resume h3 {
-	  font-size: 0.9rem;
+	  font-size: 1.0rem;
 	}
    
 	.resume p {
@@ -316,8 +316,10 @@ b, strong {
 	}
    }
    
-
-
+   h3 small {
+	font-size: 0.8rem !important; /* Adjust as needed */
+   }
+   
 
 // HAMBURGER MENU
 .navbar-light {
