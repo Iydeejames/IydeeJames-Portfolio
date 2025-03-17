@@ -70,29 +70,68 @@
         <div class="container">
             <div class="row">
                 
-                <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
-                    <div class="about-text">
-                        <h1 class="animated animated-text">
-                            <span class="mr-2">Hey, I'm</span>
-                                <div class="animated-info">
-                                    <span class="animated-item text-nowrap">Idaraobong James</span>
-                                    <span class="animated-item text-nowrap"> a Web Developer</span>
-                                </div>
-                        </h1>
-
-                        <p>I am a passionate Web Developer with over 5 years of experience in building modern, 
-                          responsive, and high-performing web applications. With a strong foundation in HTML5, CSS3, 
-                          JavaScript, TypeScript, and React.js, I excel at creating intuitive user interfaces 
-                          and scalable solutions that enhance user experience. My expertise extends to tools like Tailwind CSS,
-                           Next.js, Redux/Context API, and API integration, ensuring seamless functionality across different platforms.
-                            I am committed to writing clean, efficient code and staying up-to-date with the
-                           latest technologies to deliver exceptional results.</p>
-                        
-                        <div class="custom-btn-group mt-4">
-                          <a href="#contact" class="btn custom-btn custom-btn-bg custom-btn-link">Download resume</a>
-                        </div>
+              <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center about-section">
+                <div class="about-text">
+                  <h1 class="animated animated-text">
+                    <span class="mr-2">Hey, I'm</span>
+                    <div class="animated-info">
+                      <span class="animated-item text-nowrap">Idaraobong James</span>
+                      <span class="animated-item text-nowrap">a Web Developer</span>
                     </div>
+                  </h1>
+              
+                  <p>
+                    I am a passionate Web Developer with over 5 years of experience in building modern, responsive, and high-performing web applications. With a strong foundation in HTML5/CSS3, JavaScript, TypeScript, and React.js, I create user interfaces and scalable solutions that enhance user experience. My expertise extends to tools like Tailwind CSS, Next.js, Redux/Context API, and API integration, ensuring seamless functionality across different platforms. I am committed to writing efficient code and staying up-to-date with the latest technologies to deliver exceptional results.
+                  </p>
+              
+                  <div class="custom-btn-group mt-4">
+                    <a href="#contact" class="btn custom-btn custom-btn-bg custom-btn-link">Download resume</a>
+                  </div>
                 </div>
+              </div>
+              
+              <style>
+                .about-section {
+                  margin-top: -90px; /* Moves the section up */
+                }
+              
+                .about-text h1 {
+                  font-size: 3rem; /* Regular size for desktop */
+                }
+              
+                .about-text p {
+                  font-size: 1rem; /* Regular text size */
+                }
+              
+                @media (max-width: 768px) {
+                  .about-text h1 {
+                    font-size: 2rem; /* Smaller font size for mobile */
+                  }
+              
+                  .about-text p {
+                    font-size: 0.9rem; /* Slightly reduced paragraph size */
+                  }
+              
+                  .custom-btn-group {
+                    margin-top: 20px; /* Adjust button group margin */
+                  }
+                }
+              
+                @media (max-width: 576px) {
+                  .about-section {
+                    margin-top: -50px; /* Moves the text up more for smaller screens */
+                  }
+              
+                  .about-text h1 {
+                    font-size: 1.8rem; /* Even smaller text for mobile */
+                  }
+              
+                  .about-text p {
+                    font-size: 0.8rem; /* Smaller paragraph text */
+                  }
+                }
+              </style>
+              
 
                 <div class="col-lg-5 col-md-12 col-12">
                     <div class="about-image svg">
@@ -158,7 +197,7 @@
                 right: -5%; /* Ends almost at the left edge */
                 bottom: 0;
                 height: 2px; /* Thin blue line */
-                background-color: blue; /* Line color */
+                background-color:#3e8de8; /* Line color */
               }
             </style>
             
