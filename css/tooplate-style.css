@@ -209,6 +209,66 @@ b, strong {
   transform: translateY(-100%);
 }
 
+/* Default font sizes */
+.resume h2 {
+  font-size: 1.5rem;
+}
+
+.resume h3 {
+  font-size: 1.2rem;
+}
+
+.resume p {
+  font-size: 0.9rem;
+}
+
+.resume .timeline-yr span {
+  font-size: 1rem;
+}
+
+.resume small {
+  font-size: 0.8rem;
+}
+
+/* For tablet screens */
+@media (max-width: 768px) {
+  .resume h2 {
+    font-size: 1.3rem;
+  }
+  .resume h3 {
+    font-size: 1rem;
+  }
+  .resume p {
+    font-size: 0.8rem;
+  }
+  .resume .timeline-yr span {
+    font-size: 0.9rem;
+  }
+  .resume small {
+    font-size: 0.7rem;
+  }
+}
+/* For mobile screens */
+@media (max-width: 480px) {
+  .resume h2 {
+    font-size: 1.1rem;
+  }
+  .resume h3 {
+    font-size: 0.9rem;
+  }
+  .resume p {
+    font-size: 0.7rem;
+  }
+  /* Making year span text larger */
+  .resume .timeline-yr span {
+    font-size: 1rem; /* Bigger than education details */
+    font-weight: bold;
+  }
+  /* Making small text smaller */
+  .resume small {
+    font-size: 0.6rem;
+  }
+}
 .navbar-light .navbar-toggler-icon {
   background: none;
 }
