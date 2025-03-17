@@ -442,6 +442,10 @@ b, strong {
   color: #f7f3f3;
 }
 
+.navbar-brand {
+  margin-left: -15px; /* Adjust the value as needed */
+}
+
 .social-links .uil {
   color: #f7f3f3;
   font-size: 20px;
