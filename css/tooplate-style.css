@@ -312,6 +312,49 @@ h3 small {
   position: relative;
 }
 
+/* General Styling */
+.project-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.project-info img {
+  display: block;
+  width: 100%;
+  margin-bottom: -8px; /* Removes unwanted gap */
+}
+
+.project-description {
+  padding: 15px;
+  border-radius: 0 0 8px 8px; /* Rounded corners only at the bottom */
+  font-size: 16px;
+  color: #fff;
+  margin-top: -15px; /* Adjust this value if needed */
+}
+
+/* Unique Background Colors for Each Description */
+.project1 {
+  background-color: #000; /* Light Red */
+}
+
+.project2 {
+  background-color: #ff7f07; /* Light Blue */
+}
+
+.project3 {
+  background-color: #007791; /* Light Green */
+}
+
+.project4 {
+  background-color: #272727; /* Light Yellow */
+}
+
+.project5 {
+  background-color: #111111; /* Light Gray */
+}
+
 .copyright-text {
   font-size: 16px;
   font-weight: normal;
