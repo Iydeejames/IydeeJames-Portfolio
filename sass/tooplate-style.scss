@@ -209,6 +209,7 @@ b, strong {
 	.navbar-nav {
 		.nav-link {
 			padding: 0 20px;
+			color: $main-color;
 		}
 	}
 }
@@ -234,7 +235,7 @@ b, strong {
 	.navbar-nav {
 		.nav-link:focus,
 		.nav-link:hover {
-			color: $main-color;
+			color: $body-font-color;
 			font-weight: $font-weight-bold;
 			span {
 	    		transform: translateY(-100%);
