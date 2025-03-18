@@ -586,6 +586,59 @@ h3 small {
   color: #fff !important;
 }
 
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.tech-stack {
+  text-align: center;
+  padding: 20px;
+  background-color: transparent;
+}
+
+.tech-stack h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Grid Layout */
+.stack-grid {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* Image Styling */
+.stack-grid img {
+  width: 60px;
+  height: 60px;
+  animation: slowShake 3s infinite ease-in-out;
+}
+
+/* Keyframes for Slow Shake Effect */
+@keyframes slowShake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px) rotate(-2deg);
+  }
+  50% {
+    transform: translateX(2px) rotate(2deg);
+  }
+  75% {
+    transform: translateX(-1px) rotate(-1deg);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 @media (min-width: 1270px) {
   .owl-theme .owl-dots {
     position: relative;
