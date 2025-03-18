@@ -554,16 +554,6 @@ h3 small {
   margin-left: -15px; /* Adjust the value as needed */
 }
 
-.social-links .uil {
-  color: #f7f3f3;
-  font-size: 20px;
-  display: block;
-  margin: 5px 0;
-}
-.social-links .uil:hover {
-  color: #001d3f;
-}
-
 .social-icons {
   display: flex;
   flex-direction: column; /* Stack icons vertically */
@@ -592,7 +582,8 @@ h3 small {
 
 .social-icons a:hover {
   opacity: 0.7;
-  transform: scale(1.1); /* Slight zoom effect on hover */
+  transform: scale(1.1);
+  color: #fff !important;
 }
 
 @media (min-width: 1270px) {

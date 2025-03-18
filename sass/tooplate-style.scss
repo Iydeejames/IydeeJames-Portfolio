@@ -657,17 +657,7 @@ b, strong {
    
 
 // SOCIAL LINKS
-.social-links {
-	.uil {
-		color: #f7f3f3;
-		font-size: 20px;
-		display: block;
-		margin: 5px 0;
-		&:hover {
-			color: $main-color;
-		}
-	}
-}
+
 
 .social-icons {
 	display: flex;
@@ -697,7 +687,8 @@ b, strong {
    
    .social-icons a:hover {
 	opacity: 0.7;
-	transform: scale(1.1); /* Slight zoom effect on hover */
+	transform: scale(1.1);
+	color: #fff !important;
    }
    
 
