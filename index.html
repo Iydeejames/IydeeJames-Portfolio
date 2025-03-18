@@ -74,21 +74,41 @@
           <div class="row">
               <!-- Text Section -->
               <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center about-section">
-                <div class="about-text">
-                    <h1 class="animated-text">
-                        <span class="mr-2">Hi, I'm <span class="name-highlight">Idaraobong James</span></span>
-                    </h1>
-                    <p>
-                        I am a passionate Web Developer with over 5 years of experience in building modern, responsive, and high-performing web applications. With a strong foundation in HTML5/CSS3, JavaScript, TypeScript, and React.js, I create user interfaces and scalable solutions that enhance user experience. My expertise extends to tools like Tailwind CSS, Next.js, Redux/Context API, and API integration, ensuring seamless functionality across different platforms. I am committed to writing efficient code and staying up-to-date with the latest technologies to deliver exceptional results.
-                    </p>
-                    <div class="custom-btn-group mt-4">
-                        <a href="#contact" class="btn custom-btn">Download Resume</a>
-                    </div>
-                </div>
-            </div>
+                  <div class="about-text">
+                      <h1 class="animated-text">
+                          <span class="mr-2">Hi, I'm <span class="name-highlight">Idaraobong James</span></span>
+                      </h1>
   
-              <!-- Image Section -->
-              <div class="col-lg-5 col-md-12 col-12 d-flex justify-content-center">
+                      <!-- Image Section for Mobile -->
+                      <div class="mobile-reorder d-md-none">
+                          <div class="about-image lifted-image">
+                              <div class="image-frame">
+                                  <img src="images/project/Resume-img6.png" class="img-fluid animated-img" alt="Profile Image">
+                                  <div class="scribble scribble-1"></div>
+                                  <div class="scribble scribble-2"></div>
+                                  <div class="scribble scribble-3"></div>
+                                  <div class="scribble scribble-4"></div>
+                                  <div class="scribble scribble-5"></div>
+                                  <div class="scribble scribble-6"></div>
+                                  <div class="scribble scribble-7"></div>
+                                  <div class="scribble scribble-8"></div>
+                                  <div class="scribble scribble-9"></div>
+                                  <div class="scribble scribble-10"></div>
+                              </div>
+                          </div>
+                      </div>
+  
+                      <p>
+                          I am a passionate Web Developer with over 5 years of experience in building modern, responsive, and high-performing web applications. With a strong foundation in HTML5/CSS3, JavaScript, TypeScript, and React.js, I create user interfaces and scalable solutions that enhance user experience. My expertise extends to tools like Tailwind CSS, Next.js, Redux/Context API, and API integration, ensuring seamless functionality across different platforms. I am committed to writing efficient code and staying up-to-date with the latest technologies to deliver exceptional results.
+                      </p>
+                      <div class="custom-btn-group mt-2">
+                          <a href="#contact" class="btn custom-btn">Download Resume</a>
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- Image Section for Larger Screens -->
+              <div class="col-lg-5 col-md-12 col-12 d-flex justify-content-center mb-6 d-none d-md-flex">
                   <div class="about-image">
                       <div class="image-frame">
                           <img src="images/project/Resume-img6.png" class="img-fluid animated-img" alt="Profile Image">
@@ -121,77 +141,63 @@
       margin-top: -80px;
       animation: fadeInUp 1.5s ease-in-out;
   }
-
+  
   /* Animations */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+  @keyframes fadeInUp {
+      from {
+          opacity: 0;
+          transform: translateY(50px);
+      }
+      to {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+  
+  /* Text Styling */
+  .animated-text {
+      font-size: 3rem;
+      font-weight: bold;
+      animation: fadeInUp 1.2s ease-in-out;
+      font-family: 'Lora', serif !important;
+  }
 
-@keyframes float {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
 
-/* Text Styling */
-.animated-text {
-    font-size: 3rem;
-    font-weight: bold;
-    animation: fadeInUp 1.2s ease-in-out;
-    font-family: 'Lora', serif !important;
-}
-
-.name-highlight {
-    color: #001d3f; /* Blue for the name */
-}
-
-/* Paragraph */
-.about-text p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #333; /* Darker text for readability */
-    animation: fadeInUp 1.5s ease-in-out;
-    font-family: 'Lora', serif !important;
-}
-
-/* Button */
-.custom-btn {
-    display: inline-block;
-    padding: 9px 12px;
-    font-size: 0.8rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    background: #001d3f; /* Blue button */
-    color: #fff;
-    border-radius: 0px;
-    transition: all 0.3s ease-in-out;
-}
-
-.custom-btn:hover {
-    background: #001d3f;
-    transform: scale(1.05);
-}
-
+  .name-highlight {
+      color: #001d3f;   }
+  
+  /* Paragraph */
+  .about-text p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #333;
+      animation: fadeInUp 1.5s ease-in-out;
+      font-family: 'Lora', serif !important;
+  }
+  
+  /* Button */
+  .custom-btn {
+      display: inline-block;
+      padding: 9px 12px;
+      font-size: 0.8rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      background: #001d3f;
+      color: #fff;
+      border-radius: 0px;
+      transition: all 0.3s ease-in-out;
+  }
+  
+  .custom-btn:hover {
+      background: #001d3f;
+      transform: scale(1.05);
+  }
   
   /* Image Adjustments */
   .image-frame {
       position: relative;
       display: inline-block;
       padding: 10px;
-      transform: rotate(0);
   }
   
   .animated-img {
@@ -226,6 +232,22 @@
       .custom-btn { font-size: 0.9rem; }
       .animated-img { max-width: 70%; }
       .image-frame { padding: 5px; }
+
+  
+      /* Mobile Image Adjustments */
+      .mobile-reorder {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 20px;
+      }
+  
+      .lifted-image {
+          margin-top: -20px; /* Lifts the mobile image */
+      }
+  
+      .d-md-flex {
+          display: none !important; /* Hides the second image on mobile */
+      }
   }
   
   @media (max-width: 576px) {
@@ -235,8 +257,18 @@
       .about-image { text-align: center; }
       .animated-img { max-width: 60%; }
       .image-frame { padding: 5px; }
+
+      
+      .animated-text {
+      margin-top: -1rem !important;
+  }
+  
+      .lifted-image {
+          margin-top: -15px; /* Further lifts the mobile image */
+      }
   }
   </style>
+  
   
   
 
