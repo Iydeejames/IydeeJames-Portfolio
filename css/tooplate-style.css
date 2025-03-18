@@ -540,6 +540,10 @@ h3 small {
   background: #474559;
 }
 
+.sf {
+  font-size: 0.8rem !important;
+}
+
 .contact-info {
   background: #001d3f;
   border-radius: 0 0 3px 3px;
