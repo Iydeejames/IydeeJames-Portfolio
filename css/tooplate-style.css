@@ -529,7 +529,7 @@ h3 small {
 }
 .contact-form .submit-btn {
   background: #001d3f;
-  border-radius: 50px;
+  border-radius: 0px;
   color: #ffffff;
   font-weight: bold;
   border: 0;
