@@ -280,12 +280,20 @@
       }
     
       .project-info img {
-        width: auto; /* Maintain aspect ratio */
-        margin-bottom: 10px; /* Space beneath the images */
-        border-radius: 15px; /* Rounded border */
-        border: 2px solid rgba(141, 141, 141, 0.596); /* Black border around the image */
-      }
+    width: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space beneath the images */
+    border-radius: 1px; /* Rounded border */
+    display: block; /* Ensures proper rendering */
+    position: relative; /* Helps with shadow placement */
+    border-top: 0.5px solid #001d3f11;
+}
+
+
     
+    .project-info {
+    overflow: visible; /* Ensures shadow is not clipped */
+}
+
       .project-description {
         margin-bottom: 10px;
         font-size: 14px;
