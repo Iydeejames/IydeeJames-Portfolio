@@ -312,7 +312,7 @@ h3 small {
   position: relative;
 }
 
-/* General Styling */
+/* PROJECT Styling */
 .project-info {
   display: flex;
   flex-direction: column;
@@ -336,7 +336,7 @@ h3 small {
 
 /* Unique Background Colors for Each Description */
 .project1 {
-  background-color: #000; /* Light Red */
+  background-color: #22c55e; /* Light Red */
 }
 
 .project2 {
