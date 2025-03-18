@@ -669,6 +669,38 @@ b, strong {
 	}
 }
 
+.social-icons {
+	display: flex;
+	flex-direction: column; /* Stack icons vertically */
+	align-items: center;
+	gap: 15px; /* Space between icons */
+	margin-top: 15px;
+   }
+   
+   .social-icons a {
+	font-size: 20px; /* Adjust size as needed */
+	text-decoration: none;
+	transition: 0.3s;
+   }
+   
+   .whatsapp {
+	color: #25D366 !important; /* WhatsApp Green */
+   }
+   
+   .instagram {
+	color: #E4405F !important; /* Instagram Pink-Red */
+   }
+   
+   .twitter {
+	color: #1DA1F2 !important; /* Twitter Blue */
+   }
+   
+   .social-icons a:hover {
+	opacity: 0.7;
+	transform: scale(1.1); /* Slight zoom effect on hover */
+   }
+   
+
 
 // RESPONSIVE STYLES
 @media (min-width: 1270px) {
