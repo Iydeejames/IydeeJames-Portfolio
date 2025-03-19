@@ -83,14 +83,14 @@ b, strong {
   transition: all 0.4s ease;
 }
 .custom-btn:hover {
-  color: #001d3f;
+  color: #ffffff !important;
 }
 .custom-btn.custom-btn-bg {
-  background: #474559;
+  background: #f12b2b;
   color: #ffffff;
 }
 .custom-btn.custom-btn-bg:hover {
-  background: #001d3f;
+  background: #f12b2b !important;
   color: #ffffff !important;
 }
 
@@ -541,7 +541,7 @@ h3 small {
   transition: all 0.4s ease;
 }
 .contact-form .submit-btn:hover {
-  background: #474559;
+  background: #f12b2b;
 }
 
 .sf {
@@ -549,8 +549,13 @@ h3 small {
 }
 
 .cl {
-  background-color: #001d3f;
+  background-color: #001d3f; /* Using your existing main color */
   color: #fff;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.cl:hover {
+  background-color: #fa3838; /* Light red */
 }
 
 .contact-info {

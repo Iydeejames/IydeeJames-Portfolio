@@ -118,13 +118,13 @@ b, strong {
     overflow: hidden;
     @include transition-effect;
     &:hover {
-    	color: $main-color;
+    	color: #ffffff !important;
     }
     &.custom-btn-bg {
-    	background: $button-color;
+    	background: #f12b2b;
 		color: $text-white;
 		&:hover {
-	    	background: $main-color;
+	    	background: #f12b2b !important;
 	    	color: $text-white !important;
 	    }
     }
@@ -640,7 +640,7 @@ b, strong {
 		cursor: pointer;
 		@include transition-effect;
 		&:hover {
-			background: $button-color;
+			background: #f12b2b;
 		}
 	}
 }
@@ -650,9 +650,15 @@ b, strong {
 };
 
 .cl {
-	background-color: $main-color;
-	color: #fff
-}
+	background-color: $main-color; /* Using your existing main color */
+	color: #fff;
+	transition: background-color 0.3s ease-in-out;
+   }
+   
+   .cl:hover {
+	background-color: #fa3838; /* Light red */
+   }
+   
 
 .contact-info {
 	background: $main-color;
