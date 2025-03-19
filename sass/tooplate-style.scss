@@ -645,6 +645,11 @@ b, strong {
 	font-size: 0.8rem !important;
 };
 
+.cl {
+	background-color: $main-color;
+	color: #fff
+}
+
 .contact-info {
 	background: $main-color;
 	border-radius: 0 0 3px 3px;

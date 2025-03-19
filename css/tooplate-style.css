@@ -544,6 +544,11 @@ h3 small {
   font-size: 0.8rem !important;
 }
 
+.cl {
+  background-color: #001d3f;
+  color: #fff;
+}
+
 .contact-info {
   background: #001d3f;
   border-radius: 0 0 3px 3px;
