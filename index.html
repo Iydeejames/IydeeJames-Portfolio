@@ -26,7 +26,7 @@
     <nav class="navbar navbar-expand-sm navbar-light">
         <div class="container">
           <span class="d-inline-flex justify-content-center align-items-center rounded-circle" 
-          style="width: 40px; height: 40px; background-color: #001d3f; color: white; font-weight: 300; font-size: 16px;">
+          style="width: 40px; height: 40px; background-color: #000 !important; color: white; font-weight: 300; font-size: 16px;">
       IJ
     </span>
     
@@ -57,14 +57,7 @@
                     </li>
                 </ul>
 
-                <ul class="navbar-nav ml-lg-auto">
-                    <div class="ml-lg-4">
-                      <div class="color-mode d-lg-flex justify-content-center align-items-center">
-                        <i class="color-mode-icon"></i>
-                        Color mode
-                      </div>
-                    </div>
-                </ul>
+
             </div>
         </div>
     </nav>
@@ -165,13 +158,13 @@
 
 
   .name-highlight {
-      color: #001d3f;   }
+      color: #000 !important;   }
   
   /* Paragraph */
   .about-text p {
       font-size: 1.1rem;
       line-height: 1.6;
-      color: #333;
+      color: #000 !important;
       animation: fadeInUp 1.5s ease-in-out;
       font-family: 'Lora', serif !important;
   }
@@ -183,14 +176,14 @@
       font-size: 0.8rem;
       font-weight: bold;
       text-transform: uppercase;
-      background: #001d3f;
+      background: #000 !important;
       color: #fff;
       border-radius: 0px;
       transition: all 0.3s ease-in-out;
   }
   
   .custom-btn:hover {
-      background: #001d3f;
+      background: #000 !important;
       transform: scale(1.05);
   }
   
@@ -211,7 +204,7 @@
       width: 30px;
       height: 30px;
       background: transparent;
-      border: 2px solid #001d3f;
+      border: 2px solid #000 !important;
       border-radius: 50%;
   }
   
@@ -275,194 +268,218 @@
 
     <!-- PROJECTS -->
     <style>
-      .owl-carousel .owl-nav button.owl-prev, 
-      .owl-carousel .owl-nav button.owl-next {
-        font-size: 20px; /* Reduced arrow size */
-      }
-    
-      .project-info img {
-    width: auto; /* Maintain aspect ratio */
-    margin-bottom: 10px; /* Space beneath the images */
-    border-radius: 1px; /* Rounded border */
-    display: block; /* Ensures proper rendering */
-    position: relative; /* Helps with shadow placement */
-    border-top: 0.5px solid #001d3f36;
+.project-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-top: 6px solid var(--accent);
 }
 
 
-    
-    .project-info {
-    overflow: visible; /* Ensures shadow is not clipped */
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
 }
 
-      .project-description {
-        margin-bottom: 10px;
-        font-size: 14px;
-      }
-    
-      .project-buttons {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        margin-bottom: 20px; /* Added space to move dots down */
-      }
-    
-      .project-buttons button {
-        font-size: 12px;
-        padding: 5px 10px;
-        background-color: #1d1c1c;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-    
-      @media (min-width: 1024px) {
-        .project-info img {
-          height: 520px; /* Larger height for desktop */
-        }
-      }
-    
-      @media (max-width: 768px) {
-        .project-info img {
-          height: 210px; /* Slightly larger height for mobile */
-        }
-      }
+.project-content {
+  padding: 15px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-content h5 {
+  font-weight: bold;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.project-content p {
+  font-size: 0.9rem;
+  color: #000 !important;
+  margin-bottom: 15px;
+  flex-grow: 1;
+}
+
+.project-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.project-buttons button {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  font-size: 0.8rem;
+  padding: 6px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.project-buttons button:hover {
+  background-color: #000 !important;
+}
+
+/* Responsive grid tweaks */
+@media (max-width: 768px) {
+  .project-card img {
+    height: 170px;
+  }
+
+  .project-content p {
+    font-size: 0.85rem;
+  }
+
+  .project-buttons button {
+    font-size: 0.75rem;
+    padding: 5px 10px;
+  }
+}
+
     </style>
     
     <section class="project py-5" id="project">
       <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title">My Projects</h2>
+        </div>
         <div class="row">
-          <div class="col-lg-11 text-center mx-auto col-12">
-            <div class="col-lg-8 mx-auto">
-              <h2>My Projects</h2>
+          
+          <!-- CryptoRetrack -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="project-card" style="--accent:#000 !important;">
+              <img src="images/project/Resume-img1.png" alt="CryptoRetrack">
+              <div class="project-content">
+                <h5>CryptoRetrack</h5>
+                <p>Real-time crypto tracking platform with portfolio insights, visual analytics, and advanced market monitoring tools.</p>
+                <div class="project-buttons">
+                  <a href="https://cryptoretrack.com/" target="_blank"><button>Live Demo</button></a>
+                  <button>Private Git Repo</button>
+                </div>
+              </div>
             </div>
-    
-            <div class="owl-carousel owl-theme">
-              <div class="item">
-                <div class="project-info">
-                  <img src="images/project/Resume-img1.png" class="img-fluid" alt="project image">
-                  <p class="project-description project1">CryptoRetrack is a cutting-edge platform that provides 
-                    real-time tracking and analysis of cryptocurrency trends. With advanced data visualization 
-                    and market insights, users can effortlessly monitor price movements, track portfolio performance,
-                    and stay ahead in the fast-evolving crypto space.</p>
-                  <div class="project-buttons">
-                    <a href="https://cryptoretrack.com/" target="_blank" rel="noopener noreferrer">
-                      <button>Live Demo</button>
-                  </a>
-                  
-                    <button>Private Git Repo</button>
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="item">
-                <div class="project-info">
-                  <img src="images/project/Resume-img8.png" class="img-fluid" alt="project image">
-                  <p class="project-description project6">Whether you need a custom software solution, branding services, 
-                    or a full digital transformation strategy, Syntrix7 Technologies is here to help. Share your project details with us and 
-                    our team will get back to you with a tailored quote and professional insights. 
-                    </p>
-                  <div class="project-buttons">
-                    <a href="https://syntrix7.netlify.app/" target="_blank" rel="noopener noreferrer">
-                      <button>Live Demo</button>
-                  </a>                  
-                    <button>Private Git Repo</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="item">
-                <div class="project-info">
-                  <img src="images/project/Resume-img10.png" class="img-fluid" alt="project image">
-                  <p class="project-description project5">CTDAmongBlacks is more than just a podcast, it's a dynamic media 
-                    company powered by a talented team, many of whom were born in Nigeria but have had the privilege of living
-                     both in and outside the country. CTDA stands for "Connecting the Dots Among Blacks.</p>
-                  <div class="project-buttons">
-                    <a href="https://ctdamedia.netlify.app/" target="_blank" rel="noopener noreferrer">
-                      <button>Live Demo</button>
-                  </a>
-                  <a href="https://github.com/Iydeejames/Apple-eCommerce-website" target="_blank" rel="noopener noreferrer">
-                    <button>Git Repo</button>
-                </a>
-                 </div>
-                </div>
-              </div>
-
-    
-              <div class="item">
-                <div class="project-info">
-                  <img src="images/project/Resume-img0.png" class="img-fluid" alt="project image">
-                  <p class="project-description project2">BBI is an innovative e-learning platform built with Tailwind CSS,
-                     React JS, and Node JS. It offers a seamless and interactive learning experience online, empowering users
-                     to access quality educational content anytime, anywhere with over 1000 students navigating the platform daily 
-                     without a singhe glitch or downtime.</p>
-                  <div class="project-buttons">
-                    <a href="https://cryptoretrack.com/" target="_blank" rel="noopener noreferrer">
-                      <button>Live Demo</button>
-                  </a>
-                   <button>Private Git Repo</button>
-                  </div>
-                </div>
-              </div>
-    
-              <div class="item">
-                <div class="project-info">
-                  <img src="images/project/Resume-img2.png" class="img-fluid" alt="project image">
-                  <p class="project-description project3">Dr. Drone is a premier drone service company specializing 
-                    in professional drone operations, professional pilot training, consultancy services procurement services and maintenance solutions. Dr. Drone
-                    helps individuals and businesses unlock the full potential of drone technology with expertise and precision.
-                    </p>
-                  <div class="project-buttons">
-                    <a href="https://drdrone.ng/" target="_blank" rel="noopener noreferrer">
-                      <button>Live Demo</button>
-                  </a>                  
-                    <button>Private Git Repo</button>
-                  </div>
-                </div>
-              </div>
-    
-              <div class="item">
-                <div class="project-info">
-                  <img src="images/project/Resume-img3.png" class="img-fluid" alt="project image">
-                  <p class="project-description project4">Megaray Geoconsult is a leading professional survey company specializing
-                     in precise land surveying, geospatial mapping, and consultancy services. They deliver accurate data and
-                     expert solutions for construction, engineering, and environmental projects.</p>
-                  <div class="project-buttons">
-                    <a href="https://mega-ray.netlify.app/" target="_blank" rel="noopener noreferrer">
-                      <button>Live Demo</button>
-                  </a>
-                    <button>Private Git Repo</button>
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="item">
-                <div class="project-info">
-                  <img src="images/project/Resume-img9.png" class="img-fluid" alt="project image">
-                  <p class="project-description project5">This is a personal portfolio website built with
-                     HTML/CSS and JavaScript. It contains all the features a professional portfolio website 
-                     should have and more. User friendly interface and extra secured to protect personal information.</p>
-                  <div class="project-buttons">
-                    <a href="https://oyebanjiakins.com/" target="_blank" rel="noopener noreferrer">
-                      <button>Live Demo</button>
-                  </a>
-                  <a>
-                    <button>Private Git Repo</button>
-                </a>
-                 </div>
-                </div>
-              </div>
-    
-
-            </div> <!-- End of owl-carousel -->
-    
           </div>
+    
+          <!-- Syntrix7 -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="project-card" style="--accent:#580F64;">
+              <img src="images/project/Resume-img8.png" alt="Syntrix7">
+              <div class="project-content">
+                <h5>Syntrix7</h5>
+                <p>Digital agency delivering custom software, branding, and full-stack development services for businesses and startups.</p>
+                <div class="project-buttons">
+                  <a href="https://syntrix7.netlify.app/" target="_blank"><button>Live Demo</button></a>
+                  <button>Private Git Repo</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- CTDAmongBlacks -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="project-card" style="--accent:#15803D;">
+              <img src="images/project/Resume-img10.png" alt="CTDA">
+              <div class="project-content">
+                <h5>CTDA Media</h5>
+                <p>A podcast-driven media company promoting Black excellence through storytelling, culture, and diaspora connections.</p>
+                <div class="project-buttons">
+                  <a href="https://ctdamedia.netlify.app/" target="_blank"><button>Live Demo</button></a>
+                  <a href="https://github.com/Iydeejames/Apple-eCommerce-website" target="_blank"><button>Git Repo</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- BBI -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="project-card" style="--accent:#e9781c;">
+              <img src="images/project/Resume-img0.png" alt="BBI">
+              <div class="project-content">
+                <h5>BBI eLearning</h5>
+                <p>A fast, scalable eLearning platform built with React, Tailwind, and Node.js. Over 1000 students active daily.</p>
+                <div class="project-buttons">
+                  <a href="https://cryptoretrack.com/" target="_blank"><button>Live Demo</button></a>
+                  <button>Private Git Repo</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Dr Drone -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="project-card" style="--accent:#007791;">
+              <img src="images/project/Resume-img2.png" alt="Dr Drone">
+              <div class="project-content">
+                <h5>Dr. Drone</h5>
+                <p>Drone services company offering pilot training, consultancy, and commercial drone operations with precision and safety.</p>
+                <div class="project-buttons">
+                  <a href="https://drdrone.ng/" target="_blank"><button>Live Demo</button></a>
+                  <button>Private Git Repo</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Megaray -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="project-card" style="--accent:#494848;">
+              <img src="images/project/Resume-img3.png" alt="Megaray">
+              <div class="project-content">
+                <h5>Megaray Geoconsult</h5>
+                <p>Expert geospatial and land survey company providing consultancy and high-accuracy solutions for large-scale projects.</p>
+                <div class="project-buttons">
+                  <a href="https://mega-ray.netlify.app/" target="_blank"><button>Live Demo</button></a>
+                  <button>Private Git Repo</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Portfolio Site -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="project-card" style="--accent:#5D4037;">
+              <img src="images/project/Resume-img9.png" alt="Portfolio Site">
+              <div class="project-content">
+                <h5>Portfolio Website</h5>
+                <p>Modern developer portfolio site with interactive sections, sleek animations, and strong personal branding.</p>
+                <div class="project-buttons">
+                  <a href="https://oyebanjiakins.com/" target="_blank"><button>Live Demo</button></a>
+                  <button>Private Git Repo</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                    <!-- Raised Initiative Site -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                      <div class="project-card" style="--accent:#39a4eb;">
+                        <img src="images/project/Resume-img4.png" alt="Portfolio Site">
+                        <div class="project-content">
+                          <h5>Raised Initiative</h5>
+                          <p>This is an African peoples organizationthat seeks to provide the necessary platform for Africans to build a better Africa.</p>
+                          <div class="project-buttons">
+                            <a href="https://raisedinitiative.netlify.app/" target="_blank"><button>Live Demo</button></a>
+                            <button>Private Git Repo</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+    
         </div>
       </div>
     </section>
+    
     
     
     
@@ -592,7 +609,7 @@
       <div class="container">
         <div class="row align-items-center">
           <!-- Contact Info Section -->
-          <div class="col-lg-5 col-12 mb-4 mb-lg-0">
+          <div class="col-lg-5 col-12 mb-4  mb-lg-0">
             <div class="contact-info text-center p-4 shadow rounded">
               <h4 class="mb-3 text-white  ">Let's Connect!</h4>
               <p class="footer-text mb-2 sf">📞 +2349050821027</p>
@@ -629,7 +646,7 @@
                     <textarea name="message" rows="5" class="form-control" id="message" placeholder="Your Message"></textarea>
                   </div>
                   <div class="col-12 text-center">
-                    <button type="submit" class="btn cl w-100">Send Message</button>
+                    <button type="submit" class="btn cl w-100 ">Send Message</button>
                   </div>
                 </div>
               </form>
